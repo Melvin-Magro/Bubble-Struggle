@@ -122,7 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 184598026}
   m_Layer: 0
-  m_Name: StartMenu
+  m_Name: GameOverMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -140,7 +140,6 @@ Transform:
   m_Children:
   - {fileID: 1934416880}
   - {fileID: 888099480}
-  - {fileID: 605272058}
   - {fileID: 1382769490}
   m_Father: {fileID: 387396540}
   m_RootOrder: 1
@@ -402,87 +401,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: QUIT
+  m_Text: HOME
 --- !u!222 &454862741
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 454862738}
---- !u!1 &605272057
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 605272058}
-  - component: {fileID: 605272060}
-  - component: {fileID: 605272059}
-  m_Layer: 5
-  m_Name: Subtitle
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &605272058
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 605272057}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 3.8258677}
-  m_LocalScale: {x: 0.908601, y: 0.908601, z: 0.908601}
-  m_Children: []
-  m_Father: {fileID: 184598026}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 404.75812, y: 95.320175}
-  m_SizeDelta: {x: 193.2, y: 23.4}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &605272059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 605272057}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.73333335, g: 0.1254902, b: 0.14509805, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 1cf1cd1e1b8e7e34dbdbcbb10dc8b517, type: 3}
-    m_FontSize: 17
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 116
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
-    m_LineSpacing: 1
-  m_Text: Wolf Version
---- !u!222 &605272060
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 605272057}
 --- !u!1 &691043384
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,7 +488,7 @@ GameObject:
   - component: {fileID: 888099482}
   - component: {fileID: 888099481}
   m_Layer: 5
-  m_Name: Play_Button
+  m_Name: PlayAgain_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -628,7 +553,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 963395468}
-        m_MethodName: Play
+        m_MethodName: PlayAgain
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -740,7 +665,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: PLAY
+  m_Text: PLAY AGAIN
 --- !u!222 &951073720
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -833,7 +758,7 @@ GameObject:
   - component: {fileID: 1382769492}
   - component: {fileID: 1382769491}
   m_Layer: 5
-  m_Name: Quit_Button
+  m_Name: Home_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -851,7 +776,7 @@ RectTransform:
   m_Children:
   - {fileID: 454862739}
   m_Father: {fileID: 184598026}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -898,7 +823,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 963395468}
-        m_MethodName: Quit
+        m_MethodName: Home
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -975,8 +900,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 263.1668, y: 129.49738}
-  m_SizeDelta: {x: 193.2, y: 23.4}
+  m_AnchoredPosition: {x: 262, y: 118}
+  m_SizeDelta: {x: 297.7, y: 58.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1934416881
 MonoBehaviour:
@@ -1010,7 +935,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Bubble Struggle
+  m_Text: Game Over!
 --- !u!222 &1934416882
 CanvasRenderer:
   m_ObjectHideFlags: 0

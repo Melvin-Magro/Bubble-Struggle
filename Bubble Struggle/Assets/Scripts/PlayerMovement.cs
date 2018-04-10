@@ -18,10 +18,11 @@ public class PlayerMovement : MonoBehaviour {
 
 	public void OnCollisionEnter2D(Collision2D c)
 	{
+		//if a ball hits the player, loads game over scene 
 		if (c.collider.tag == "Ball") 
 		{
 			Debug.Log ("gameover");
-			SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
+			SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
 		}
 	}
 }

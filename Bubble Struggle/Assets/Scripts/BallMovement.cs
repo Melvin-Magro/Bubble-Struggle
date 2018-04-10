@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BallMovement : MonoBehaviour {
 
@@ -12,6 +13,7 @@ public class BallMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
+		//a force is applied to the rigidbody of the ball
 		rb.AddForce (initial, ForceMode2D.Impulse);		
 	}
 
@@ -28,9 +30,9 @@ public class BallMovement : MonoBehaviour {
 			ball2.GetComponent<BallMovement> ().initial = new Vector2 (-2f, 5.5f);
 		}
 
+		//destroys the gameobject which is the ball
 		Destroy (gameObject);
 	}
-
+		
 }
 
-//testing this

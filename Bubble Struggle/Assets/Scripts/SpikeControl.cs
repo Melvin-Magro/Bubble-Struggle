@@ -11,8 +11,7 @@ public class SpikeControl : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		isTriggered = false;
-		
+		isTriggered = false;		
 	}
 	
 	// Update is called once per frame
@@ -30,6 +29,7 @@ public class SpikeControl : MonoBehaviour {
 
 		else 
 		{
+			//the spike is put at the same location of the player if not triggered
 			transform.position = player.position;
 			transform.localScale = new Vector3 (1f, 0f, 1f);
 		}
